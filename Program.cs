@@ -15,18 +15,20 @@ namespace KivételKezelés
                 try
                 {
                     
-                    //a = int.Parse(inp);
-                    if (!int.TryParse(inp, out a))
-                    {
+                    a = int.Parse(inp);
+                    hiba = false;
+                    
 
-                        throw new Exception("El...tad ");
-                    }
-                    else hiba = false;
+                    
+                    
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
+                    
 
-                    Console.WriteLine(e);
+                    Console.WriteLine("el..tad");
+                    
+
                 }
             return hiba;
             
